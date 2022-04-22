@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>İsmail Berke Özkan-Checkbox</title>
+        <link href="styles.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="#">ismailberkeozkanarts</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Hakkımda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="radiobuttons.html">Bootstrap 5 Radios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Bootstrap 5 Checkbox</a></li>
+                    </ul>
+                </div>
+            </div>
+                <a class="navbar-brand" href="#">Checkbox Yapısı</a>
+               
+        </nav>
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>Bootstrap 5 Checkbox</h1>
+                <p class="lead">Bu sayfada Bootstrap 5 ile Checkbox yapısının ne olduğunu ve iki farklı görünümünü size göstereceğim. </p>
+                <p><h5>Checkbox Nedir?</h5>Checkboxları bir anahtar olarak düşünmek çok daha doğru olur. Belirli ayarları, tercihleri ya da bir durumun var olup olmayacağını bu yapı ile onaylayıp onaylamayabilirsiniz. Bu yapı sayfa içerisinde karşınıza bazen bir tik ile açabileceğiniz kutu şeklinde gelirken, bazen de tıklandığında sağa sola kayan bir anahtar şeklinde gelebilir. </p>
+                    <p>Aşağıda ki kod yapısı ile size basit bir örnek sunmak istiyorum; <br>Bootstrap 5'in hazır css yapılarındaki class'ları kullanarak form-check class'lı divi oluşturdum. Daha sonra input type için checkbox özelliğini tanımlayıp, gerekli hazır class'ları vererek ve label kullanarak iki adet checkbox oluşturdum.Burada for="flexCheckDefault" yapısı ile kutunun default yani başlangıçta seçili olmamasını, for="flexCheckChecked" ile başlangıçta seçili olmasını sağladık.  </p>
+                    <p>  
+<xmp  style="color:green; background-color: black;">
+                            
+    <div class="form" style="background-color:darkgreen; color:white;">  
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Yüksek Performans (for="flexCheckDefault" yapısı ile hali hazırda seçili değil)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+            Pil Tasarrufu (for="flexCheckChecked" yapısı ile hali hazırda seçili.)
+            </label>
+          </div>
+    </div>               
+</xmp>
+                    </p>
+                    <h5>SONUÇ</h5>
+                    <div class="form" style="background-color:darkgreen; color:white;">  
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                             Yüksek Performans (for="flexCheckDefault" yapısı ile hali hazırda seçili değil)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                            Pil Tasarrufu (for="flexCheckChecked" yapısı ile hali hazırda seçili.)
+                            </label>
+                          </div>
+                    </div>               
+                    
+               <br>
+                <h2>Inline Checkbox</h2>
+                <p>Inline checkbox butonlarının tek farkı aynı satırda yan yana hizalanmalarıdır</p>
+                <p>
+                   Aşağıda ki kod yapısındaki fark ise div içerisinde tanımlı class'ta form-check dışında form-check-inline class'ının ekli olması. Bu sayede radio butonlarımız yan yana aynı hizada yer alacaklardır.<br>
+
+                    <xmp  style="color:green; background-color:black;">
+<div class="form" style="background-color:darkgreen; color:white;">  
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Soğan</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Ketçap</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Mayonez</label>
+      </div>
+</div>               
+                    </xmp>
+                </p>
+                <p>SONUÇ</p>
+                <div class="form" style="background-color:darkgreen; color:white;">  
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Soğan</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Ketçap</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Mayonez</label>
+                      </div>
+                </div>                 
+                <br>
+
+                <h2>Switches</h2>
+                <p>Switche adında ki bu checkbox yapısının özelliği ise değiştirmek. Anahtar yapısı şeklinde tanımlayabileceğimiz bu checkbox, diğer checkboxlar ile aynı görevi görür. Sadece sayfa içinde ki görünümünde farklılık vardır. </p>
+                <p>
+                   Aşağıda ki kod yapısı ile sizlere bu görünüm farkını göstermek istiyorum;<br>
+                   form-check ve form-switch class özelliğine sahip bir div oluşturdum. Type özelliğine checkbox, ve bootstrap class larına sahip inputu ve labeli ekledim. "Role" özellğine switch vererek, switch yani değiştirme özelliğine ve görünümüne sahip olmasını sağladım. For="flexSwitchCheckChecked" hali hazırda açık olmasını, for="flexSwitchCheckDefault" ise default yani hali hazırda kapalı olmasını sağlıyor.
+                    <xmp  style="color:green; background-color:black;">
+<div class="form" style="background-color:darkgreen; color:white;">  
+<div class="form-check form-switch">
+<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+<label class="form-check-label" for="flexSwitchCheckDefault">Tutturulan Pencereler 
+    (for="flexSwitchCheckDefault" yapısı ile hali hazırda kapalı.)</label>
+</div>
+<div class="form-check form-switch">
+<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+<label class="form-check-label" for="flexSwitchCheckChecked">Zaman Çizelgesi 
+    (for="flexSwitchCheckChecked" yapısı ile hali hazırda açık.)</label>
+</div>
+</div>               
+                    </xmp>
+                </p>
+                <p>SONUÇ</p>
+                <div class="form" style="background-color:darkgreen; color:white;">  
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Tutturulan Pencereler (for="flexSwitchCheckDefault" yapısı ile hali hazırda kapalı.)</label>
+                      </div>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Zaman Çizelgesi (for="flexSwitchCheckChecked" yapısı ile hali hazırda açık.)</label>
+                      </div>
+                </div>                 
+                <br>   
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

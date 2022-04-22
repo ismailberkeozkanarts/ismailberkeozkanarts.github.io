@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>İsmail Berke Özkan-Radios</title>
+        <link href="styles.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="#">ismailberkeozkanarts</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Hakkımda</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Bootstrap 5 Radios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkboxs.html">Bootstrap 5 Checkbox</a></li>
+                    </ul>
+                </div>
+            </div>
+                <a class="navbar-brand" href="#">Radio Butonları</a>
+               
+        </nav>
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>Bootstrap 5 Radio Butonları</h1>
+                <p class="lead">Bu sayfada Bootstrap 5 ile radio butonları yapısının ne olduğunu ve iki farklı görünümünü size göstereceğim. </p>
+                <p><h5>Radio butonları Nedir?</h5>Radio butonları, çoğunlukla sayfa içerisinde bir veya birden fazla tercih arasından seçim veya seçimler yapmamızı sağlayan, bu yapılan seçim veya seçimlere göre işlem yaptıran butonlardır.  </p>
+                    <p>Aşağıda ki kod yapısı ile size basit bir örnek sunmak istiyorum; <br>Bootstrap 5'in hazır css yapılarındaki class'ları kullanarak form-check class'lı divi oluşturdum. Daha sonra input type için radio özelliğini tanımlayıp, gerekli hazır class'ları vererek ve label kullanarak iki adet radio butonu oluşturdum.Burada input seçim yapacağımız butonu oluştururken, label ise seçim yapacağımız tercihin ismini oluşturur.  </p>
+                    <p>  
+<xmp  style="color:green; background-color: black;">
+                            
+<div class="form" style="background-color:darkgreen; color:white;">  
+<div class="form-check">
+<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label" for="flexRadioDefault1">
+Ankara
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+<label class="form-check-label" for="flexRadioDefault2">
+Adana
+</label>
+</div>  
+</div>               
+</xmp>
+                    </p>
+                    <h5>SONUÇ</h5>
+                    <div class="form" style="background-color:darkgreen; color:white;">  
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                             Ankara
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Adana
+                            </label>
+                          </div>  
+                        </div>               
+                    
+               <br>
+                <h2>Inline Radio</h2>
+                <p>Inline radio butonlarının tek farkı aynı satırda yan yana hizalanmalarıdır</p>
+                <p>
+                   Aşağıda ki kod yapısındaki fark ise div içerisinde tanımlı class'ta form-check dışında form-check-inline class'ının ekli olması. Bu sayede radio butonlarımız yan yana aynı hizada yer alacaklardır.<br>
+
+                    <xmp  style="color:green; background-color:black;">
+<div class="form" style="background-color:darkgreen; color:white;">  
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">İstanbul</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">İzmir</label>
+      </div>
+</div>               
+                    </xmp>
+                </p>
+                <p>SONUÇ</p>
+                <div class="form" style="background-color:darkgreen; color:white;">  
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">İstanbul</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">İzmir</label>
+                      </div>
+                </div>               
+                <br>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
